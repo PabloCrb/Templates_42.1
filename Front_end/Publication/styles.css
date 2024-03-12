@@ -1,3 +1,13 @@
+* {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+header, footer, nav {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 main {
     min-height: 80vh;
 
@@ -22,7 +32,7 @@ body{
 /* Estilo de las imágenes */
 .image-carousel-container img {
     display: block; /* Asegura que las imágenes se muestren una debajo de la otra */
-    width: auto; /* Utiliza todo el ancho del contenedor */
+    width: 95%; /* Utiliza todo el ancho del contenedor */
     height: 100%; /* Permite que la altura se ajuste automáticamente */
 }
 
@@ -48,7 +58,8 @@ body{
 }
 
 #information {
-    text-align: center; /* Centra los elementos de texto */
+    text-align: left;
+    margin-left: 2.5%;
 }
 
 #name {
@@ -59,34 +70,43 @@ body{
     display: flex; /* Utiliza flexbox para mostrar elementos en línea */
     justify-content: center; /* Centra los elementos horizontalmente */
     align-items: flex-start;
+    width: 97.5%;
 }
 
 #description {
-   /* width: 50vh; /* Ancho del párrafo */
+    width: 10vh;
     margin-right: 20px; /* Margen derecho para separar del elemento adyacente */
-    text-align: justify;
     flex: 1;
 }
 
 #no_final_image {
-    width: 25vh; /* Ancho de la imagen */
+    width: 55vh; /* Ancho de la imagen */
     height: auto;
 }
 
 .Header-Comments{
     display: flex;
-    justify-content: space-between;
+    margin-left: 2%;
 }
 .Header-Comments h2{
     margin: 10px;
 
 }
 
-.Header-Comments #mostrar-formulario{
+.Header-Comments #mostrar-formulario, .Header-Comments #addRating {
     margin: 10px;
     width: auto;
     height: auto;
 }
+
+#addRating {
+    margin-left: 64%;
+}
+
+.Header-Comments #addRating {
+    margin-left: 64.25%;
+}
+
 /* Estilos para los comentarios */
 .comentario {
     margin-bottom: 20px;
@@ -147,3 +167,21 @@ body{
     margin:10px;
 }
 
+#map img {
+    height: 40vh;
+    width: 97%;
+    justify-content: center;
+}
+
+#comentarios {
+    margin-left: 1.5%;
+    width: 80%;
+}
+
+#comentarios li, #ratings li {
+    margin-bottom: 10px;
+}
+
+.comments\&ratings {
+    display: flex;
+}
