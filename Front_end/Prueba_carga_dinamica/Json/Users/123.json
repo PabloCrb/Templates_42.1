@@ -14,7 +14,7 @@
   ],
   "saves_list": [
     {
-      "publication_id":8
+      "publication_id":3
     }
   ],
   "followers_list": [
@@ -26,5 +26,6 @@
     {
       "user_id": 456
     }
-  ]
+  ],
+  "user_image": "imagesUsers/123.png"
 }

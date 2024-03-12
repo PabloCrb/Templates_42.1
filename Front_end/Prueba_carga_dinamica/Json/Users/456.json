@@ -6,7 +6,7 @@
   "password": "maria1234",
   "my_publication_list": [
     {
-      "publication_id": 8
+      "publication_id": 3
     }
   ],
   "saves_list": [
@@ -20,5 +20,6 @@
     {
       "user_id": 123
     }
-  ]
+  ],
+  "user_image": "imagesUsers/456.png"
 }

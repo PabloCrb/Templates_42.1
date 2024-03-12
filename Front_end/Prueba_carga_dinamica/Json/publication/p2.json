@@ -1,0 +1,16 @@
+{
+  "publication_id": 2,
+  "place_id": 2,
+  "user_id": 123,
+  "description": "Oleeee",
+  "comment_list":[
+    "/Json/comments/2/1.json"
+  ],
+  "image_list": [
+    "/publicationImages/2/imagen1.jpg"
+  ],
+  "score": 4.5,
+  "label_list":[
+      "/Json/Labels/ForestLabel.json"
+  ]
+}
