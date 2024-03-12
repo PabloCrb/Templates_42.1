@@ -13,7 +13,8 @@
 <main>
     <div class="edit_profile_container">
 
-        <div class="profile_change_image">
+        <div for="profile_change_image" class="profile_change_image">
+            <input type="file" id="ProfileImageUpload" name="ProfileImageUpload" multiple accept="image/*">
             <img src="../Images/usuario_generico.png" id="ProfileImage" alt="">
             <p>Change Photo</p>
         </div>
@@ -36,12 +37,12 @@
         </div>
 
         <div class="save_and_exit_buttons">
-            <div class="save_button">
-                <button id="saveBtn" onclick="location.href='../Account/account.html';">Save</button>
-            </div>
-
             <div class="exit_button">
                 <button id="exitBtn" onclick="location.href='../Account/account.html';">Exit</button>
+            </div>
+
+            <div class="save_button">
+                <button id="saveBtn" onclick="location.href='../Account/account.html';">Save</button>
             </div>
         </div>
 
