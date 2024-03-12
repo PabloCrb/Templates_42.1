@@ -1,5 +1,6 @@
 body {
-    background-color: #CCCCCC;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
 }
 
 main {
@@ -22,6 +23,17 @@ main {
 
 .profile_change_image {
     margin-right: 80px;
+    position: relative;
+}
+
+.profile_change_image input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Hace el input transparente */
+    cursor: pointer;
 }
 
 .save_button,
@@ -83,12 +95,25 @@ main {
 
 /* ------ SAVE & EXIT BUTTONS ------ */
 
-.save_button button,
-.exit_button button {
+.save_button button {
     width: 90px;
     padding: 10px;
     border-radius: 8px;
-    background-color: #e0e0e0;
+    background-color: #0C6DFF;
+    color: white;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.exit_button button {
+    width: 90px;
+    /*margin-right: 20em;*/
+    padding: 10px;
+    border-radius: 8px;
+    background-color: white;
+    color: #0C6DFF;
     font-weight: bold;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
@@ -97,5 +122,5 @@ main {
 
 .save_button button:hover,
 .exit_button button:hover {
-    background-color: #BFBFBF
+    background-color: #58a9fa
 }
