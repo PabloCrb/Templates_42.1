@@ -1,0 +1,24 @@
+{
+  "user_id": 456,
+  "name": "JMaria",
+  "user": "Jmaria",
+  "email": "maria@maria.es",
+  "password": "maria1234",
+  "my_publication_list": [
+    {
+      "publication_id": 8
+    }
+  ],
+  "saves_list": [
+  ],
+  "followers_list": [
+    {
+      "user_id": 123
+    }
+  ],
+  "follow_list": [
+    {
+      "user_id": 123
+    }
+  ]
+}

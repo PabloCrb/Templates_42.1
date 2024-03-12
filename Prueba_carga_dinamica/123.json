@@ -1,0 +1,30 @@
+{
+  "user_id": 123,
+  "name": "Juan Perez",
+  "user": "juanperez91",
+  "email": "juan@juan.es",
+  "password": "Juan1234",
+  "my_publication_list": [
+    {
+      "publication_id": 1
+    },
+    {
+      "publication_id": 2
+    }
+  ],
+  "saves_list": [
+    {
+      "publication_id":8
+    }
+  ],
+  "followers_list": [
+    {
+      "user_id": 456
+    }
+  ],
+  "follow_list": [
+    {
+      "user_id": 456
+    }
+  ]
+}
