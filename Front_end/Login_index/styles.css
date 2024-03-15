@@ -3,7 +3,7 @@ body {
     padding: 0;
     height: 100vh;
     font-family: Arial, sans-serif;
-    background-color: #CCCCCC;
+    background-color: lightgrey;
 }
 
 .container {
@@ -45,7 +45,7 @@ body {
 .login-form {
     padding: 10px;
     background-color: #ffffff;
-    color: #3D94FA;
+    color: #0C6DFF;
     max-width: 500px;
     margin: 0 auto;
     text-align: center;
@@ -68,9 +68,9 @@ input {
 }
 
 button {
-    width: 50%;
+    width: 6em;
     padding: 10px;
-    background-color: #3D94FA;
+    background-color: #0C6DFF;
     color: #ffffff;
     border: none;
     cursor: pointer;
@@ -101,21 +101,28 @@ button:hover {
     text-decoration: underline;
 }
 
+.other_options a {
+    display: block;
+    font-size: 15px;
+}
+
 .social-login-options {
-    margin-top: 5%;
+    margin-top: 2%;
+    display: block;
 }
 
 .google-login,
 .facebook-login {
-    display: inline-block; /* Hace que los botones estén en línea */
+    display: inline;
+    width: 100%;
 }
 
 .google-login a,
 .facebook-login a {
     text-decoration: none;
-    color: #3D94FA;
+    color: #0C6DFF;
     background-color: #ffffff;
-    border: 1px solid #3D94FA;
+    border: 1px solid #0C6DFF;
     padding: 8px 12px;
     border-radius: 4px;
     margin-right: 10px;
@@ -124,7 +131,7 @@ button:hover {
 
 .google-login a:hover,
 .facebook-login a:hover {
-    background-color: #3D94FA;
+    background-color: #0C6DFF;
     color: #ffffff;
 }
 
@@ -143,4 +150,13 @@ button:hover {
     .left-side img {
         border-radius: 0;
     }
+}
+
+.right-side * {
+    margin-top: 1em;
+    font-size: 25px;
+}
+
+.right-side b {
+    font-size: 35px;
 }

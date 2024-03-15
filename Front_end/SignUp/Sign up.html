@@ -9,7 +9,7 @@
 <body>
 <div class="whiteRectangle">
     <div class="center">
-        <form>
+        <form id="signupForm" onsubmit="return validateForm()">
             <div>
                 <label for="firstName"></label><input type="text" id="firstName" name="firstName" placeholder="First name" required class="small_inputs">
                 <label for="lastName"></label><input type="text" id="lastName" name="lastName" placeholder="Last name" class="small_inputs">
@@ -32,20 +32,23 @@
             </div>
 
             <div class="checkbox-container">
-                <input type="checkbox" id="agreeTerms" name="agreeTerms">
+                <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
                 <label class="checkbox-label" for="agreeTerms">I accept the <a href="">Terms of Use & Privacy Policy </a></label>
             </div>
 
             <div>
-                <button class="SignUpButton" type="submit" onclick="location.href='../index.html';">Sign Up</button>
+                <button class="SignUpButton" type="submit">Sign Up</button>
             </div>
 
             <div class="AlreadyAcc">
-                 Already have an account? <a href="../index.html"> Login here </a>
+                Already have an account? <a href="../index.html"> Login here </a>
             </div>
 
         </form>
     </div>
 </div>
+
+<script src="validate_signup.js"></script>
+
 </body>
 </html>
