@@ -77,3 +77,44 @@ form {
     border: 2px solid red;
 }
 
+@media only screen and (max-width: 768px) {
+    body {
+        background-image: none; /* Elimina la imagen de fondo */
+    }
+
+    .whiteRectangle {
+        margin-left: 2em;
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    .checkbox-container {
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .checkbox-label {
+        font-size: 15px;
+    }
+
+    .email {
+        padding-bottom: 2em;
+    }
+
+    .whiteRectangle * {
+        width: 95%;
+    }
+
+    .SignUpButton {
+        font-size: 21px;
+    }
+
+    .AlreadyAcc {
+        font-size: 19px;
+    }
+
+}
+
+
