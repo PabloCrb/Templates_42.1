@@ -1,0 +1,16 @@
+{
+  "publication_id": 3,
+  "place_id": 3,
+  "user_id": 456,
+  "description": "Eres un cara pan",
+  "comment_list":[
+  ],
+  "image_list": [
+    "/Json/publicationImages/3/imagen1.jpg"
+  ],
+  "score": 4.5,
+  "label_list":[
+    "/Json/Labels/ForestLabel.json",
+    "/Json/Labels/BeachLabel.json"
+  ]
+}

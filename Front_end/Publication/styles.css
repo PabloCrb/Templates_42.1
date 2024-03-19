@@ -3,6 +3,10 @@
     margin-right: 10px;
 }
 
+body {
+    margin: 0;
+}
+
 header, footer, nav {
     margin-left: 0;
     margin-right: 0;
@@ -11,10 +15,6 @@ header, footer, nav {
 main {
     min-height: 80vh;
 
-}
-
-body{
-    margin: 0;
 }
 
 /* Estilo del carrusel */
