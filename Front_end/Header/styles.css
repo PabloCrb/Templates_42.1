@@ -21,10 +21,10 @@
 }
 
 #header img {
-    max-height: 90px;
+    max-height: 60px;
     margin-left: 10px;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
     cursor: pointer;
 }
 
@@ -60,4 +60,30 @@ nav a{
 
 nav a:hover {
     color: #18449b;
+}
+
+/* ------ PHONE HEADER ------ */
+
+@media only screen and (max-width: 720px) {
+    /* Mostramos el header de dispositivos móviles y ocultamos el header original */
+    #header {
+        display: none;
+    }
+
+    #phoneHeader {
+        background: linear-gradient(180deg, #a7e1e1 10%, #d3f6f6 50%, #a7e1e1 90%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        height: 80px;
+        width: 100%;
+    }
+
+    #phoneHeader img {
+        width: 65px;
+        height: 65px;
+        padding: 10px;
+        cursor: pointer;
+    }
 }
