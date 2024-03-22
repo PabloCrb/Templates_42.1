@@ -9,7 +9,8 @@
 </head>
 <body>
 
-<header></header>
+<header id="phoneHeader"></header>
+<header id="desktopHeader"></header>
 <main>
     <div class="contImagen" id="imagenContainer"></div>
 </main>
@@ -18,7 +19,8 @@
 <script src='../JavaScript/templateLoader.js'></script>
 <script src='../JavaScript/imagenLoader.js'></script>
 <script>
-    cargarTemplate('../Header/header.html', 'header');
+    cargarTemplate('../PhoneHeader/phoneHeader.html', '#phoneHeader');
+    cargarTemplate('../Header/header.html', '#desktopHeader');
     cargarImagenes()
     cargarImagenes()
     cargarImagenes()

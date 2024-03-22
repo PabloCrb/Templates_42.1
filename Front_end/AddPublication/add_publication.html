@@ -11,7 +11,8 @@
     <script src="../JavaScript/loadMap.js"></script>
 </head>
 <body>
-<header></header>
+<header id="phoneHeader"></header>
+<header id="desktopHeader"></header>
 <main>
     <div class="add_publication_container">
 
@@ -60,7 +61,8 @@
 </main>
 <footer></footer>
 <script>
-    cargarTemplate('../Header/header.html', 'header');
+    cargarTemplate('../PhoneHeader/phoneHeader.html', '#phoneHeader');
+    cargarTemplate('../Header/header.html', '#desktopHeader');
     cargarTemplate('../Footer/footer.html', 'footer')
 </script>
 </body>

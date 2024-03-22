@@ -181,7 +181,35 @@ main {
     background-color: #BFBFBF
 }
 
+/* ------ RESPONSIVE HEADERS ------ */
 
+/* Ocultar los headers por defecto */
+header#phoneHeader {
+    display: none;
+}
+
+header#desktopHeader {
+    display: none;
+}
+
+/* Mostrar el header correspondiente según el tamaño de la ventana */
+@media screen and (max-width: 720px) {
+    header#desktopHeader {
+        display: none;
+    }
+    header#phoneHeader {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 721px) {
+    header#phoneHeader {
+        display: none;
+    }
+    header#desktopHeader {
+        display: block;
+    }
+}
 
 
 

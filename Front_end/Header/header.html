@@ -22,33 +22,5 @@
     <button id="LogOut" onclick="location.href='../Login_index/index.html'; localStorage.setItem('userId', null);">LogOut</button>
     <img src="/Front_end/Images/usuario-de-perfil.png" id="ProfileImage" alt="" onclick="location.href='../Account/account.html';">
 </header>
-
-<header id="phoneHeader">
-    <img src="../Images/menu_hamburguesa.png" alt="menu_icon">
-    <img src="../Images/album_images.png" alt="album_icon" onclick="location.href='../Saved/saved.html';">
-    <img src="../Images/logo_ExploreSpots_sin_fondo.png" alt="ExploreSpot-logo" onclick="location.href='../MapPage/map.html';">
-    <img src="../Images/signo_mas.png" alt="add_icon" onclick="location.href='../AddPublication/add_publication.html';">
-    <img src="../Images/usuario-de-perfil.png" alt="profile_icon" onclick="location.href='../Account/account.html';">
-</header>
-
-<script>
-    function loadHeader() {
-        var screenWidth = window.innerWidth;
-        if (screenWidth < 720) {
-            document.getElementById("header").style.display = "none"; // Oculta el header original
-            document.getElementById("phoneHeader").style.display = "flex"; // Muestra el header para móviles
-        } else {
-            document.getElementById("header").style.display = "flex"; // Muestra el header original
-            document.getElementById("phoneHeader").style.display = "none"; // Oculta el header para móviles
-        }
-    }
-
-    window.onload = loadHeader; // Cargamos el header al cargar la página
-
-    window.addEventListener('resize', function(event){
-        loadHeader(); // Cargamos el header cuando cambia el tamaño de la ventana
-    });
-</script>
-
 </body>
 </html>

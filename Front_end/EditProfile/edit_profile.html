@@ -10,8 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body>
-<header></header>
-<nav></nav>
+<header id="phoneHeader"></header>
+<header id="desktopHeader"></header>
 <main>
     <div class="edit_profile_container">
 
@@ -63,8 +63,8 @@
 </main>
 <footer></footer>
 <script>
-    cargarTemplate('../Header/header.html', 'header');
-    cargarTemplate('../Nav/nav.html', 'nav');
+    cargarTemplate('../PhoneHeader/phoneHeader.html', '#phoneHeader');
+    cargarTemplate('../Header/header.html', '#desktopHeader');
     cargarTemplate('../Footer/footer.html', 'footer');
 </script>
 </body>
