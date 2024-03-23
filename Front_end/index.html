@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <link rel="stylesheet" href="Login_index/styles.css">
+    <link rel="stylesheet" href="/Front_end/Login_index/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="/Front_end/JavaScript/logIn.js"></script>
 </head>
 <body>
     <div class="container">
@@ -15,7 +16,7 @@
             <div class="login-form-container">
                 <div class="login-form">
                     <b>LOGIN</b>
-                    <form action="MapPage/map.html" method="post" id="loginForm">
+                    <form method="post" id="loginForm" onsubmit="return false;">
                         <div class="form-group">
                             <label for="user_name">Username:</label>
                             <input type="text" id="user_name" name="user_name" required>
@@ -38,7 +39,7 @@
                             </div>
                         </div>
 
-                        <div>
+                        <!--div>
                             Or sign in with:
                         </div>
                         <div class="social-login-options">
@@ -48,7 +49,7 @@
                             <div class="facebook-login">
                                 <a href="#">Facebook</a>
                             </div>
-                        </div>
+                        </div-->
                     </form>
                 </div>
             </div>

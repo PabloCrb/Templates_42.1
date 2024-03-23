@@ -1,6 +1,12 @@
 {
   "Users":[
-    "/Json/Users/123.json",
-    "/Json/Users/456.json"
+    {
+      "userName": "juan@juan.es",
+      "directory": "/Front_end/Prueba_carga_dinamica/Json/Users/123.json"
+    },
+    {
+      "userName":"maria@maria.es",
+      "directory": "/Front_end/Prueba_carga_dinamica/Json/Users/456.json"
+    }
   ]
 }
