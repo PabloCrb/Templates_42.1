@@ -34,7 +34,7 @@ async function findUser(UserName){
             console.error('Ocurrio un error',error);
         });
     const userID =await takeID(urlUser);
-    return await comparePassword(urlUser);
+    return await comparePassword(urlUser,userID);
 }
 
 async function comparePassword(urlUser, userID) {

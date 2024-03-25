@@ -1,10 +1,12 @@
 {
-  "publication_id": 2,
   "place_id": 2,
+  "name": "Roque Nublo",
+  "location": [27.96912842945901, -15.610618804979774],
+  "location_id": 2,
   "user_id": 123,
   "description": "Oleeee",
   "comment_list":[
-    "/Json/comments/2/1.json"
+    "/Json/comments/p2_1.json"
   ],
   "image_list": [
     "/publicationImages/2/imagen1.jpg"
