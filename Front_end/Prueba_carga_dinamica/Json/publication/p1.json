@@ -5,14 +5,13 @@
   "user_id": 123,
   "description": "Me gusta el flow de la cucaracha cuando le hecho flis hace asi y se emborrachaa",
   "comment_list":[
-    "/Json/comments/p1_1.json",
-    "/Json/comments/p1_2.json",
-    "/Json/comments/p1_3.json"
+    "/Front_end/Prueba_carga_dinamica/Json/comments/p1_1.json",
+    "/Front_end/Prueba_carga_dinamica/Json/comments/p1_2.json"
   ],
   "image_list": [
     "/Front_end/Images/prueba_las_canteras.jpg",
-    "/publicationImages/1/imagen2.jpg",
-    "/publicationImages/1/imagen3.jpg"
+    "/Front_end/Images/Las-Canteras-Beach-.jpg",
+    "/Front_end/Images/playa_de_las_canteras-gran_canaria_6.jpg"
   ],
   "score": 4.5,
   "label_list":[

@@ -10,10 +10,10 @@ main {
 /* Estilo del carrusel */
 .image-carousel-container {
     margin-top: 10px;
-    width: auto; /* ajusta el ancho */
+    width: auto;
     height: 50vh; /*Utiliza el 50% de la pantalla visible como alto*/
-    overflow: hidden; /* Oculta el contenido que excede el ancho */
-    position: relative; /* Permite posicionar los botones sobre el contenedor */
+    overflow: hidden;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,30 +21,30 @@ main {
 
 /* Estilo de las imágenes */
 .image-carousel-container img {
-    display: block; /* Asegura que las imágenes se muestren una debajo de la otra */
-    width: 95%; /* Utiliza todo el ancho del contenedor */
-    height: 100%; /* Permite que la altura se ajuste automáticamente */
+    display: block;
+    width: 95%;
+    height: 100%;
 }
 
 /* Estilo de los botones */
 .carousel-button {
     position: absolute; /* Posiciona los botones sobre el contenedor */
-    top: 50%; /* Los coloca en la mitad verticalmente */
-    transform: translateY(-50%); /* Los centra verticalmente */
-    background: rgba(0, 0, 0, 0.5); /* Color de fondo transparente */
-    color: white; /* Color del texto */
-    padding: 10px; /* Espaciado interno */
-    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
 }
 
 /* Estilo del botón de dirección izquierda */
 .carousel-button.left {
-    left: 0; /* Alinea a la izquierda */
+    left: 0;
 }
 
 /* Estilo del botón de dirección derecha */
 .carousel-button.right {
-    right: 0; /* Alinea a la derecha */
+    right: 0;
 }
 
 #information {
@@ -53,24 +53,24 @@ main {
 }
 
 #name {
-    margin-top: 20px; /* Espacio en la parte superior */
+    margin-top: 20px;
 }
 
 #content-container {
-    display: flex; /* Utiliza flexbox para mostrar elementos en línea */
-    justify-content: center; /* Centra los elementos horizontalmente */
+    display: flex;
+    justify-content: center;
     align-items: flex-start;
     width: 97.5%;
 }
 
 #description {
     width: 10vh;
-    margin-right: 20px; /* Margen derecho para separar del elemento adyacente */
+    margin-right: 20px;
     flex: 1;
 }
 
 #no_final_image {
-    width: 55vh; /* Ancho de la imagen */
+    width: 55vh;
     height: auto;
 }
 
@@ -90,11 +90,11 @@ main {
 }
 
 #addRating {
-    margin-left: 64%;
+    margin-left: auto;
 }
 
 .Header-Comments #addRating {
-    margin-left: 64.25%;
+    margin-left: auto;
 }
 
 /* Estilos para los comentarios */
