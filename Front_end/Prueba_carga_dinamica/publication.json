@@ -1,0 +1,13 @@
+{
+  "Publication": [
+    {
+      "url": "/Front_end/Prueba_carga_dinamica/Json/publication/p1.json"
+    },
+    {
+      "url": "/Front_end/Prueba_carga_dinamica/Json/publication/p2.json"
+    },
+    {
+      "url": "/Front_end/Prueba_carga_dinamica/Json/publication/p3.json"
+    }
+  ]
+}

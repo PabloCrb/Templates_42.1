@@ -1,6 +1,8 @@
 {
-  "publication_id": 3,
   "place_id": 3,
+  "name": "ULGP edificio de informática",
+  "location": [28.07246596716351, -15.450255925386381],
+  "location_id": 3,
   "user_id": 456,
   "description": "Eres un cara pan",
   "comment_list":[
