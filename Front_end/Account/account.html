@@ -6,16 +6,18 @@
     <link rel="stylesheet" href="/Front_end/Account/account.css">
 </head>
 <body>
-
-<header></header>
+<header id="phoneHeader"></header>
+<header id="desktopHeader"></header>
 <nav></nav>
 <main>
     <div class="User">
         <img src="/Front_end/Images/usuario_generico.png" alt="">
-        <span><b>Lorem ipsum</b></span>
-        <a href="../Saved/saved.html">SAVED</a>
-        <a href="../AddPublication/add_publication.html">CREATE</a>
-        <a href="../EditProfile/edit_profile.html">EDIT PROFILE</a>
+        <span><b>Usuario Prueba</b></span>
+        <div class="options">
+            <a href="../Saved/saved.html">SAVED</a>
+            <a href="../AddPublication/add_publication.html">CREATE</a>
+            <a href="../EditProfile/edit_profile.html">EDIT PROFILE</a>
+        </div>
     </div>
     <div class="contImagen" id="imagenContainer">
     </div>
@@ -24,8 +26,8 @@
 <script src='../JavaScript/templateLoader.js'></script>
 <script src="../JavaScript/imagenLoader.js"></script>
 <script>
-    cargarTemplate('/Front_end/Header/header.html', 'header');
-    cargarTemplate('/Front_end/Nav/nav.html', 'nav');
+    cargarTemplate('../PhoneHeader/phoneHeader.html', '#phoneHeader');
+    cargarTemplate('/Front_end/Header/header.html', '#desktopHeader');
     cargarTemplate('/Front_end/Footer/footer.html', 'footer');
     cargarImagenes();
 </script>
