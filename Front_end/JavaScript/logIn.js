@@ -56,6 +56,7 @@ async function comparePassword(urlUser, userID) {
             console.error('Ocurrio un error', error);
         });
     if (password === userPassword){
+        localStorage.setItem("user",urlUser);
         localStorage.setItem("userID",userID);
         return true
     }else{
