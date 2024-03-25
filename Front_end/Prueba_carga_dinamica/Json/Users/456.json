@@ -7,6 +7,12 @@
   "my_publication_list": [
     {
       "publication_id": 3
+    },
+    {
+      "publication_id": 2
+    },
+    {
+      "publication_id": 1
     }
   ],
   "saves_list": [

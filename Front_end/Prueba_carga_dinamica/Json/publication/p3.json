@@ -8,11 +8,11 @@
   "comment_list":[
   ],
   "image_list": [
-    "/Json/publicationImages/3/imagen1.jpg"
+    "/Front_end/Images/prueba_ulpgc.jpg"
   ],
   "score": 4.5,
   "label_list":[
-    "/Json/Labels/ForestLabel.json",
-    "/Json/Labels/BeachLabel.json"
+    "/Front_end/Prueba_carga_dinamica/Json/Labels/ForestLabel.json",
+    "/Front_end/Prueba_carga_dinamica/Json/Labels/BeachLabel.json"
   ]
 }
