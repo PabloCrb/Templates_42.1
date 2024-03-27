@@ -21,8 +21,8 @@ main {
 
 /* Estilo de las imágenes */
 .image-carousel-container img {
-    display: block;
-    width: 95%;
+    display: none;
+    width: auto;
     height: 100%;
 }
 
@@ -157,7 +157,7 @@ main {
     margin:10px;
 }
 
-#map img {
+#map {
     height: 40vh;
     width: 97%;
     justify-content: center;

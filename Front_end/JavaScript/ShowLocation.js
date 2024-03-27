@@ -16,7 +16,6 @@ async function loadAllPublication() {
     const files = await takeFiles();
     const publications = [];
     for(const file of files.Publication){
-        console.log(file);
         const response = await fetch(file.url)
             .then(response =>{
             if(!response.ok){
@@ -37,8 +36,8 @@ async function paintMap() {
         location.push(ubicacion[0]);
         location.push(ubicacion[1]);
         const marker = L.marker(location, {
-            id: publication.publication_id,
-            name: publication.nombre
+            id: publication.location_id,
+            name: publication.name
         }).addTo(map);
         marker.on('click', function (e){
             localStorage.setItem('currentPublication',e.target.options.id);
