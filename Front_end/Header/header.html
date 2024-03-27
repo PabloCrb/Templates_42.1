@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Header</title>
     <link href="/Front_end/Header/styles.css" rel="stylesheet">
+    <script src="../JavaScript/userDataLoader.js"></script>
 </head>
 <body>
 <header id="header">
@@ -19,8 +20,15 @@
             <li><a href="../EditProfile/edit_profile.html">Edit profile</a></li>
         </ul>
     </nav>
-    <button id="LogOut" onclick="location.href='../Login_index/index.html'; localStorage.setItem('userId', null);">LogOut</button>
-    <img src="/Front_end/Images/usuario-de-perfil.png" id="ProfileImage" alt="" onclick="location.href='../Account/account.html';">
+    <button id="LogOut" onclick="location.href='../index.html'; localStorage.setItem('userId', null);">LogOut</button>
+    <img src="" id="profilePhotoHeader" alt="" onclick="location.href='../Account/account.html';">
 </header>
+
+<script>
+    (async () => {
+        const directory = localStorage.getItem("user");
+        await loadProfilePhoto(directory, "profilePhotoHeader");
+    })();
+</script>
 </body>
 </html>

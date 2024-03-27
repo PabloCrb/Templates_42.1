@@ -1,9 +1,9 @@
 {
-  "user_id": 456,
-  "name": "JMaria",
-  "user": "Jmaria",
-  "email": "maria@maria.es",
-  "password": "maria1234",
+  "user_id": 789,
+  "name": "Pablo",
+  "user": "Pabluchi",
+  "email": "pabloprueba@gmail.com",
+  "password": "123456",
   "my_publication_list": [
     {
       "publication_id": 3
@@ -33,5 +33,5 @@
       "user_id": 123
     }
   ],
-  "user_image": "/Front_end/Images/prueba1.jpg"
+  "user_image": "/Front_end/Images/foto-perfil.jpg"
 }

@@ -63,7 +63,10 @@
 <footer></footer>
 <script>
     cargarTemplate('../PhoneHeader/phoneHeader.html', '#phoneHeader');
-    cargarTemplate('../Header/header.html', '#desktopHeader');
+    cargarTemplate('../Header/header.html', '#desktopHeader', () => {
+        const directory = localStorage.getItem("user");
+        loadProfilePhoto(directory, "profilePhotoHeader");
+    });
     cargarTemplate('../Footer/footer.html', 'footer')
 </script>
 </body>

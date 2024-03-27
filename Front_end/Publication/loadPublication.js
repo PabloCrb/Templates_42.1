@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(){
-    fetch("/Front_end/Prueba_carga_dinamica/Json/publication/p1.json")
+    const publicationURL = localStorage.getItem("location_id")
+    fetch(publicationURL)
         .then(response => response.json())
         .then(data => {
             /* --- Name & Description --- */

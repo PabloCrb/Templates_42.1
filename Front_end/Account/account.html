@@ -11,8 +11,8 @@
 <nav></nav>
 <main>
     <div class="User">
-        <img src="/Front_end/Images/usuario_generico.png" alt="">
-        <span><b>Usuario Prueba</b></span>
+        <img id="profilePhotoAccount" alt="" src="">
+        <span id="userName"><b></b></span>
         <div class="options">
             <a href="../Saved/saved.html">SAVED</a>
             <a href="../AddPublication/add_publication.html">CREATE</a>
@@ -24,11 +24,29 @@
 </main>
 <footer></footer>
 <script src='../JavaScript/templateLoader.js'></script>
-<script src="../JavaScript/imagenLoader.js"></script>
+<script src="../JavaScript/userDataLoader.js"></script>
 <script>
     cargarTemplate('../PhoneHeader/phoneHeader.html', '#phoneHeader');
-    cargarTemplate('/Front_end/Header/header.html', '#desktopHeader');
+    cargarTemplate('../Header/header.html', '#desktopHeader', () => {
+        const directory = localStorage.getItem("user");
+        loadProfilePhoto(directory, "profilePhotoHeader");
+    });
+
     cargarTemplate('/Front_end/Footer/footer.html', 'footer');
+
+    (async () => {
+        const directory = localStorage.getItem("user");
+        await loadUserName(directory);
+        await loadProfilePhoto(directory, "profilePhotoAccount");
+
+        const publication_id = await getUserPublicationsIDs(directory, "my_publication_list");
+        for (const id of publication_id) {
+            const publication_url = await getPublicationURL(id);
+            const imagen = await loadPublicationField(publication_url, "image_list");
+            const name = await loadPublicationField(publication_url, "name");
+            addImage(imagen, name, publication_url);
+        }
+    })();
 </script>
 </body>
 </html>
