@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <script src='../JavaScript/templateLoader.js'></script>
     <script src="../JavaScript/changePasswordFunctions.js"></script>
+    <script src="../JavaScript/userDataLoader.js"></script>
     <title>Edit Profile</title>
     <link href="../EditProfile/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
@@ -17,7 +18,7 @@
 
         <div for="profile_change_image" class="profile_change_image">
             <input type="file" id="ProfileImageUpload" name="ProfileImageUpload" multiple accept="image/*">
-            <img src="../Images/usuario_generico.png" id="ProfileImage" alt="">
+            <img src="" id="profilePhotoEditProfile" alt="">
             <p>Change Photo</p>
         </div>
 
@@ -39,9 +40,9 @@
 
         <form id="changePasswordContainer" class="change_password_container" >
             <p>New Password:</p>
-            <input type="password" id="newPassword" placeholder="New Password" required>
+            <label for="newPassword"></label><input type="password" id="newPassword" placeholder="New Password" required>
             <p>Repeat Password:</p>
-            <input type="password" id="repeatPassword" placeholder="Repeat Password" required>
+            <label for="repeatPassword"></label><input type="password" id="repeatPassword" placeholder="Repeat Password" required>
             <div id="passwordError"></div>
             <div class="confirm_new_password_button">
                 <button id="cancelNewPasswordBtn" onclick="toggleChangePassword()" type="button">Cancel</button>
@@ -64,8 +65,12 @@
 <footer></footer>
 <script>
     cargarTemplate('../PhoneHeader/phoneHeader.html', '#phoneHeader');
-    cargarTemplate('../Header/header.html', '#desktopHeader');
+    cargarTemplate('../Header/header.html', '#desktopHeader', () => {
+        const directory = localStorage.getItem("user");
+        loadProfilePhoto(directory, "profilePhotoHeader");
+    });
     cargarTemplate('../Footer/footer.html', 'footer');
+    loadProfilePhoto(localStorage.getItem("user"), "profilePhotoEditProfile");
 </script>
 </body>
 </html>

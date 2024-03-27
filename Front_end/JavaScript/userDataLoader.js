@@ -1,4 +1,4 @@
-function addImage(imagenPath, texto) {
+function addImage(imagenPath, texto, publicationURL) {
     let nuevoElemento = document.createElement('div');
     nuevoElemento.className = 'imagewd';
     nuevoElemento.style.width = '350px';
@@ -28,41 +28,14 @@ function addImage(imagenPath, texto) {
         textoElemento.style.display = 'none';
     });
 
+    nuevoElemento.addEventListener('click', function() {
+        localStorage.setItem("location_id", publicationURL);
+        window.location.href = '../Publication/publication.html';
+    });
+
     nuevoElemento.appendChild(textoElemento);
     let contenedor = document.getElementById("imagenContainer");
     contenedor.appendChild(nuevoElemento);
-}
-
- async function loadUserDirectory(url) {
-    const userID = localStorage.getItem("userName");
-
-    if (!userID) {
-        console.error('User name not found in localStorage.');
-        return Promise.reject('User name not found in localStorage.');
-    }
-
-    return fetch(url)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
-        .then(data => {
-            const filteredUser = data["Users"].filter(user => user.userName === userID);
-            if (filteredUser.length === 1) {
-                return filteredUser[0];
-            } else {
-                throw new Error('User not found or multiple users found with the same ID.');
-            }
-        })
-        .then(data => {
-            return data["directory"];
-        })
-        .catch(error => {
-            console.error('There was a problem with the fetch operation:', error);
-            throw error;
-        });
 }
 
 async function getUserPublicationsIDs(url, fieldName) {
@@ -118,15 +91,30 @@ async function loadPublicationField(url, fieldName) {
         });
 }
 
-(async () => {
-    localStorage.setItem("userName", "maria@maria.es");
-    const directory = await loadUserDirectory("prueba_user.JSON");
-    const publication_id = await getUserPublicationsIDs(directory, "my_publication_list");
-
-    for (const id of publication_id) {
-        const publication_url = await getPublicationURL(id);
-        const imagen = await loadPublicationField(publication_url, "image_list");
-        const name = await loadPublicationField(publication_url, "name");
-        addImage(imagen, name);
-        }
-})();
+async function loadUserName(url) {
+    return fetch(url)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            const userName = document.getElementById("userName");
+            userName.textContent = data["user"];
+        });
+}
+async function loadProfilePhoto(url, imageID) {
+    return fetch(url)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            const profile = document.getElementById(imageID);
+            profile.src = data["user_image"];
+            profile.style.borderRadius = "50%";
+        });
+}
