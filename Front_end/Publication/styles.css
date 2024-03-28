@@ -50,10 +50,35 @@ main {
 #information {
     text-align: left;
     margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+#topSide {
+    display: flex;
+    flex-direction: column;
 }
 
+.star{
+    font-size: 24px;
+    color: gold;
+}
+#publicationData, #userData {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#publicationData {
+    order: 1;
+}
+
+#photoUser {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
 #name {
     margin-top: 20px;
+    margin-right: 2.5%;
 }
 
 #content-container {
@@ -159,7 +184,7 @@ main {
 
 #map {
     height: 40vh;
-    width: 97%;
+    width: 100%;
     justify-content: center;
 }
 

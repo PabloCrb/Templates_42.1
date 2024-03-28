@@ -18,15 +18,24 @@
 <header id="phoneHeader"></header>
 <header id="desktopHeader"></header>
 <main>
-    <img>
-    <div  id="ImageCarrusel" class="image-carousel-container">
-        <!-- Botones de navegación -->
-        <div class="carousel-button left" onclick="moveCarousel(-1)">❮</div>
-        <div class="carousel-button right" onclick="moveCarousel(1)">❯</div>
-    </div>
     <div id="information">
-        <h1 id = 'name' ></h1>
-        <h2 id = 'username' ></h2>
+        <div id="top Side">
+            <div id="publicationData">
+                <h1 id = 'name' ></h1>
+                <h1 id='score'></h1>
+            </div>
+            <div id="userData">
+                <img id="photoUser">
+                <h2 id = 'username' ></h2>
+            </div>
+        </div>
+        <img>
+        <div  id="ImageCarrusel" class="image-carousel-container">
+            <!-- Botones de navegación -->
+            <div class="carousel-button left" onclick="moveCarousel(-1)">❮</div>
+            <div class="carousel-button right" onclick="moveCarousel(1)">❯</div>
+        </div>
+
         <div id="content-container">
             <p id = 'description'></p>
         </div>
@@ -38,10 +47,7 @@
         <h3>Ratings</h3>
         <button id="addRating">Add rating</button>
     </div>
-    <div class="comments&ratings">
-        <ul id="comments"></ul>
-        <ul id="ratings"></ul>
-    </div>
+    <div id="coments"></div>
 </main>
 
     <footer></footer>
@@ -50,7 +56,6 @@
         await initializePublication();
         initCarousel('.image-carousel-container img')
     });
-    initCarousel('.image-carousel-container img');
     cargarTemplate('../PhoneHeader/phoneHeader.html', '#phoneHeader');
     cargarTemplate('../Header/header.html', '#desktopHeader');
     cargarTemplate('../Footer/footer.html', 'footer');
