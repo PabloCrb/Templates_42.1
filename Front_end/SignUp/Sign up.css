@@ -108,9 +108,9 @@ form {
     border: 2px solid red;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 924px) {
     body {
-        background-image: none; /* Elimina la imagen de fondo */
+        background-image: none;
     }
 
     .whiteRectangle {
@@ -122,12 +122,15 @@ form {
     }
 
     .checkbox-container {
-        flex-direction: row;
-        gap: 0;
+        display: flex;
+    }
+
+    #agreeTerms {
+        width: 3vh;
     }
 
     .checkbox-label {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .email {
@@ -143,7 +146,7 @@ form {
     }
 
     .AlreadyAcc {
-        font-size: 19px;
+        font-size: 17px;
     }
 
 }

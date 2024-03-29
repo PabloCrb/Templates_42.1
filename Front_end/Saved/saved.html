@@ -32,7 +32,7 @@
             const publication_url = await getPublicationURL(id);
             const imagen = await loadPublicationField(publication_url, "image_list");
             const name = await loadPublicationField(publication_url, "name");
-            addImage(imagen, name, publication_url);
+            addImage(imagen, name, id);
         }
     })();
 </script>
