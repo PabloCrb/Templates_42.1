@@ -15,6 +15,13 @@
   "saves_list": [
     {
       "publication_id":3
+    },
+
+    {
+      "publication_id":4
+    },
+    {
+      "publication_id": 2
     }
   ],
   "followers_list": [
