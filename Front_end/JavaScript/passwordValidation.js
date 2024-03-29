@@ -1,7 +1,7 @@
 function validatePassword() {
-    var pass1 = document.getElementById("password").value;
-    var pass2 = document.getElementById("confirmPassword").value;
-    var errorDiv = document.getElementById("passwordError");
+    const pass1 = document.getElementById("password").value;
+    const pass2 = document.getElementById("confirmPassword").value;
+    const errorDiv = document.getElementById("passwordError");
 
     if (pass1 !== pass2) {
         errorDiv.innerText = "Passwords do not match";
