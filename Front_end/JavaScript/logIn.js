@@ -17,7 +17,6 @@ async function takeID(urlUser) {
             console.error('Ocurrio un error',error);
         });
 }
-
 async function findUser(UserName){
     const urlUser = await fetch("/Front_end/Datos/user.json")
         .then(response =>{
@@ -36,7 +35,6 @@ async function findUser(UserName){
     const userID =await takeID(urlUser);
     return await comparePassword(urlUser,userID);
 }
-
 async function comparePassword(urlUser, userID) {
     if(urlUser===''){
         return false;

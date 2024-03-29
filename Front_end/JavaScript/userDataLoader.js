@@ -37,7 +37,6 @@ function addImage(imagenPath, texto, publicationID) {
     let contenedor = document.getElementById("imagenContainer");
     contenedor.appendChild(nuevoElemento);
 }
-
 async function getUserPublicationsIDs(url, fieldName) {
     return fetch(url)
         .then(response => {
@@ -51,46 +50,6 @@ async function getUserPublicationsIDs(url, fieldName) {
             return publicationList.map(publication => publication.publication_id);
         });
 }
-
-async function getPublicationURL(id) {
-    return fetch("/Front_end/Datos/publication.JSON")
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
-        .then(data => {
-            const publications = data["Publication"];
-            if (id >= 1 && id <= publications.length) {
-                const index = id - 1;
-                return publications[index].url;
-            } else {
-                throw new Error('Publication ID out of range');
-            }
-        })
-        .catch(error => {
-            console.error('There was a problem with the fetch operation:', error);
-            throw error;
-        });
-}
-
-async function loadPublicationField(url, fieldName) {
-    return fetch(url)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
-        .then(data => {
-            return data[fieldName];
-        })
-        .then(data => {
-            return (fieldName === "name") ? data : data[0];
-        });
-}
-
 async function loadUserName(url) {
     return fetch(url)
         .then(response => {
@@ -118,3 +77,43 @@ async function loadProfilePhoto(url, imageID) {
             profile.style.borderRadius = "50%";
         });
 }
+
+
+async function getPublicationURL(id) {
+    return fetch("/Front_end/Datos/publication.JSON")
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            const publications = data["Publication"];
+            if (id >= 1 && id <= publications.length) {
+                const index = id - 1;
+                return publications[index].url;
+            } else {
+                throw new Error('Publication ID out of range');
+            }
+        })
+        .catch(error => {
+            console.error('There was a problem with the fetch operation:', error);
+            throw error;
+        });
+}
+async function loadPublicationField(url, fieldName) {
+    return fetch(url)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            return data[fieldName];
+        })
+        .then(data => {
+            return (fieldName === "name") ? data : data[0];
+        });
+}
+
