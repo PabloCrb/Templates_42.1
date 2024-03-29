@@ -1,8 +1,8 @@
 function addImage(imagenPath, texto, publicationID) {
     let nuevoElemento = document.createElement('div');
     nuevoElemento.className = 'imagewd';
-    nuevoElemento.style.width = '350px';
-    nuevoElemento.style.height = '350px';
+    nuevoElemento.style.width = '40vh';
+    nuevoElemento.style.height = '40vh';
     nuevoElemento.style.position = 'relative';
     nuevoElemento.style.backgroundImage = `url('${imagenPath}')`;
     nuevoElemento.style.backgroundSize = 'cover';
