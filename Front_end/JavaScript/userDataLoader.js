@@ -1,4 +1,4 @@
-function addImage(imagenPath, texto, publicationURL) {
+function addImage(imagenPath, texto, publicationID) {
     let nuevoElemento = document.createElement('div');
     nuevoElemento.className = 'imagewd';
     nuevoElemento.style.width = '350px';
@@ -29,7 +29,7 @@ function addImage(imagenPath, texto, publicationURL) {
     });
 
     nuevoElemento.addEventListener('click', function() {
-        localStorage.setItem("location_id", publicationURL);
+        localStorage.setItem("currentPublication", publicationID);
         window.location.href = '../Publication/publication.html';
     });
 
