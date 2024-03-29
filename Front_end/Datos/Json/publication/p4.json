@@ -1,0 +1,19 @@
+{
+  "place_id": 4,
+  "name": "Barranco de Azuaje",
+  "location": [28.0630153415, -15.570705],
+  "location_id": 4,
+  "user_id": 123,
+  "description": "La reserva natural especial de Azuaje es un espacio natural protegido localizado en un tramo del barranco de Azuaje, situado al norte de Gran Canaria, Canarias, España, que recorre en dirección sur-norte la comarca agrícola de las medianías.",
+  "comment_list":[
+    "/Front_end/Datos/Json/comments/p4_1.json"
+  ],
+  "image_list": [
+    "/Front_end/Datos/images/azuaje.jpg",
+    "/Front_end/Datos/images/azuaje2.jpg"
+  ],
+  "score": 5,
+  "label_list":[
+    "/Front_end/Datos/Json/Labels/ForestLabel.json"
+  ]
+}

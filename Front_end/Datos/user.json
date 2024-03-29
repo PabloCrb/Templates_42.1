@@ -7,10 +7,6 @@
     {
       "userName":"maria@maria.es",
       "directory": "/Front_end/Datos/Json/Users/456.json"
-    },
-    {
-      "userName":"pabloprueba@gmail.com",
-      "directory": "/Front_end/Datos/Json/Users/789.json"
     }
   ]
 }
