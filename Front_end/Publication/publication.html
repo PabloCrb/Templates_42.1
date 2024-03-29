@@ -9,7 +9,7 @@
     <script type="module" src="/Front_end/JavaScript/loadMap.js" ></script>
     <script src='../JavaScript/templateLoader.js'></script>
     <script src='/Front_end/JavaScript/carrusel.js'></script>
-    <script src='/Front_end/JavaScript/UploadComments.js'></script>
+    <script src="/Front_end/JavaScript/userDataLoader.js"></script>
     <script src="../JavaScript/loadPublication.js"></script>
     <title>Publication</title>
 
@@ -57,7 +57,10 @@
         initCarousel('.image-carousel-container img')
     });
     cargarTemplate('../PhoneHeader/phoneHeader.html', '#phoneHeader');
-    cargarTemplate('../Header/header.html', '#desktopHeader');
+    cargarTemplate('../Header/header.html', '#desktopHeader', () => {
+        const directory = localStorage.getItem("user");
+        loadProfilePhoto(directory, "profilePhotoHeader");
+    });
     cargarTemplate('../Footer/footer.html', 'footer');
 </script>
 </body>

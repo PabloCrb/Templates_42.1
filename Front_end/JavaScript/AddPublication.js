@@ -1,6 +1,5 @@
 import {initializeMap} from './loadMap.js';
 
-localStorage.setItem('userID',123);//para probar
 const userID = localStorage.getItem('userID');
 const imagenesSeleccionadas =[];
 const PointerMap = {}

@@ -23,7 +23,7 @@ function initializeMap(latitude, longitude) {
 
 
 async function takeUrl(publicationID) {
-    const response = await fetch("/Front_end/Prueba_carga_dinamica/publication.json")
+    const response = await fetch("/Front_end/Datos/publication.json")
         .then(async response => {
             if (!response.ok) {
                 throw new Error("Fail to fetch document");
@@ -49,7 +49,7 @@ async function loadElements(data) {
     document.getElementById("name").textContent = data.name;
     createScore(data.score);
     document.getElementById("description").textContent = data.description;
-    const user = await fetch("/Front_end/Prueba_carga_dinamica/Json/Users/" + data.user_id + ".json")
+    const user = await fetch("/Front_end/Datos/Json/Users/" + data.user_id + ".json")
         .then(async response => {
             if (!response.ok) {
                 throw new Error("Fail to fetch document");
@@ -85,7 +85,6 @@ function createComment(userName, photoUser, text) {
 }
 
 async function loadComment(comment_list) {
-    console.log(comment_list);
     for ( comment of comment_list){
         const response = await fetch(comment)
             .then(response =>{
@@ -94,7 +93,7 @@ async function loadComment(comment_list) {
                 }
                 return response.json();
             });
-        const user = await fetch("/Front_end/Prueba_carga_dinamica/Json/Users/" + response.user_id + ".json")
+        const user = await fetch("/Front_end/Datos/Json/Users/" + response.user_id + ".json")
             .then(async response => {
                 if (!response.ok) {
                     throw new Error("Fail to fetch document");

@@ -19,7 +19,7 @@ async function takeID(urlUser) {
 }
 
 async function findUser(UserName){
-    const urlUser = await fetch("/Front_end/Prueba_carga_dinamica/user.json")
+    const urlUser = await fetch("/Front_end/Datos/user.json")
         .then(response =>{
             if(!response.ok){
                 throw new Error('Hubo un problema');

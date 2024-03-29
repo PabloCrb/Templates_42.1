@@ -1,0 +1,16 @@
+{
+  "Publication": [
+    {
+      "url": "/Front_end/Datos/Json/publication/p1.json",
+      "id": "1"
+    },
+    {
+      "url": "/Front_end/Datos/Json/publication/p2.json",
+      "id": "2"
+    },
+    {
+      "url": "/Front_end/Datos/Json/publication/p3.json",
+      "id": "3"
+    }
+  ]
+}

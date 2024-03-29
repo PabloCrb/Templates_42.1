@@ -1,0 +1,20 @@
+{
+  "name": "Las Canteras",
+  "location":[28.13503328381347, -15.441051946479885],
+  "location_id": 1,
+  "user_id": 123,
+  "description": "\nLa Playa de Las Canteras, ubicada en Las Palmas de Gran Canaria, es una de las joyas naturales de las Islas Canarias y una de las playas urbanas más emblemáticas de España. Su nombre proviene de antiguas canteras de piedra que solían estar cerca de la costa. Con una extensión de más de tres kilómetros de longitud, esta playa de arena dorada y aguas cristalinas ofrece un entorno impresionante para relajarse, practicar deportes acuáticos y disfrutar del sol durante todo el año gracias al clima subtropical de la región. La emblemática barra natural de La Canteras, conocida como \"La Barra\", protege la playa de las corrientes y oleaje, creando un espacio seguro para el baño y convirtiéndola en un destino ideal para familias y amantes del mar. Además, su paseo marítimo, repleto de restaurantes, cafeterías y tiendas, añade un toque vibrante a esta playa que combina la belleza natural con la comodidad urbana.",
+  "comment_list":[
+    "/Front_end/Datos/Json/comments/p1_1.json",
+    "/Front_end/Datos/Json/comments/p1_2.json"
+  ],
+  "image_list": [
+    "/Front_end/Images/prueba_las_canteras.jpg",
+    "/Front_end/Images/Las-Canteras-Beach-.jpg",
+    "/Front_end/Images/playa_de_las_canteras-gran_canaria_6.jpg"
+  ],
+  "score": 4.5,
+  "label_list":[
+      "/Json/Labels/BeachLabel.json"
+  ]
+}

@@ -53,7 +53,7 @@ async function getUserPublicationsIDs(url, fieldName) {
 }
 
 async function getPublicationURL(id) {
-    return fetch("/Front_end/Prueba_carga_dinamica/publication.JSON")
+    return fetch("/Front_end/Datos/publication.JSON")
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');

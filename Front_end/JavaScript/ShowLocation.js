@@ -2,7 +2,7 @@ import {initializeMap} from './loadMap.js';
 const map = initializeMap();
 
 async function takeFiles() {
-    const  response = await fetch("/Front_end/Prueba_carga_dinamica/publication.json")
+    const  response = await fetch("/Front_end/Datos/publication.json")
         .then(response =>{
             if(!response.ok){
                 throw new Error('No se pudo obtener informacion');
