@@ -1,4 +1,3 @@
-//localStorage.setItem("currentPublication","1"); //prueba
 function initializeMap(latitude, longitude) {
     var map = L.map('map').setView([latitude, longitude], 13);
     var openstreetmap = L.tileLayer(
@@ -20,8 +19,6 @@ function initializeMap(latitude, longitude) {
     L.marker([latitude, longitude]).addTo(map);
     return map;
 }
-
-
 async function takeUrl(publicationID) {
     const response = await fetch("/Front_end/Datos/publication.json")
         .then(async response => {
@@ -60,7 +57,6 @@ async function loadElements(data) {
     document.getElementById("photoUser").src = user.user_image;
 
 }
-
 async function loadImages(image_list) {
     const listaImagenes = document.getElementById('ImageCarrusel');
     for (const imageUrl of image_list) {
@@ -69,7 +65,6 @@ async function loadImages(image_list) {
         listaImagenes.appendChild(nuevaImagen);
     }
 }
-
 function createComment(userName, photoUser, text) {
     var comentariosDiv = document.getElementById('coments');
     var comentarioHTML = `
@@ -83,7 +78,6 @@ function createComment(userName, photoUser, text) {
             `;
     comentariosDiv.innerHTML += comentarioHTML;
 }
-
 async function loadComment(comment_list) {
     for ( comment of comment_list){
         const response = await fetch(comment)
@@ -107,7 +101,6 @@ async function loadComment(comment_list) {
 
     }
 }
-
 async function initializePublication() {
     const url = await takeUrl(localStorage.getItem("currentPublication"));
     const response = await fetch(url)

@@ -4,14 +4,16 @@
   "location": [27.96912842945901, -15.610618804979774],
   "location_id": 2,
   "user_id": 123,
-  "description": "Oleeee",
+  "description": "El Roque Nublo es una impresionante formación rocosa situada en el corazón de la isla de Gran Canaria, en el archipiélago canario. Se eleva majestuosamente a una altura de aproximadamente 80 metros sobre un altiplano volcánico, siendo uno de los monumentos naturales más emblemáticos y reconocibles de la isla. Esta imponente estructura de basalto, formada por procesos geológicos hace millones de años, ha sido un punto de referencia cultural, religiosa y de orientación para los habitantes originarios de la isla, los antiguos guanches. Su ubicación privilegiada ofrece vistas panorámicas impresionantes de los paisajes montañosos y volcánicos de Gran Canaria, así como del océano Atlántico que lo rodea. El Roque Nublo es un destino popular para excursionistas y amantes de la naturaleza que desean explorar su entorno único y disfrutar de la tranquilidad y la belleza natural que ofrece este emblemático símbolo de la isla.",
   "comment_list":[
-    "/Json/comments/p2_1.json"
+    "/Front_end/Datos/Json/comments/p2_1.json"
   ],
   "image_list": [
-    "/Front_end/Images/prueba_roque_nublo.jpg"
+    "/Front_end/Datos/images/prueba_roque_nublo.jpg",
+    "/Front_end/Datos/images/roque-nublo-gran-canaria_98.webp",
+    "/Front_end/Datos/images/Roque-nublo_g.jpg"
   ],
-  "score": 4.5,
+  "score": 5,
   "label_list":[
       "/Json/Labels/ForestLabel.json"
   ]

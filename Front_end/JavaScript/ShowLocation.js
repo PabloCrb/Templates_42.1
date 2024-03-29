@@ -45,10 +45,10 @@ async function paintMap() {
         });
         marker.bindTooltip(publication.name);
         marker.on('mouseover', function(e) {
-            marker.openTooltip(); // Abre el tooltip cuando el ratón se coloca sobre el marcador
+            marker.openTooltip();
         });
         marker.on('mouseout', function(e) {
-            marker.closeTooltip(); // Cierra el tooltip cuando el ratón sale del marcador
+            marker.closeTooltip();
         });
     }
 }

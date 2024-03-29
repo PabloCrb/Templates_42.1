@@ -9,9 +9,9 @@
     "/Front_end/Datos/Json/comments/p1_2.json"
   ],
   "image_list": [
-    "/Front_end/Images/prueba_las_canteras.jpg",
-    "/Front_end/Images/Las-Canteras-Beach-.jpg",
-    "/Front_end/Images/playa_de_las_canteras-gran_canaria_6.jpg"
+    "/Front_end/Datos/images/prueba_las_canteras.jpg",
+    "/Front_end/Datos/images/Las-Canteras-Beach-.jpg",
+    "/Front_end/Datos/images/playa_de_las_canteras-gran_canaria_6.jpg"
   ],
   "score": 4.5,
   "label_list":[

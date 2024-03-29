@@ -4,13 +4,14 @@
   "location": [28.07246596716351, -15.450255925386381],
   "location_id": 3,
   "user_id": 456,
-  "description": "Eres un cara pan",
+  "description": "El Edificio de Informática de la Universidad de Las Palmas de Gran Canaria (ULPGC) es una infraestructura moderna y funcional diseñada para albergar las actividades académicas y de investigación relacionadas con las tecnologías de la información y la comunicación. Ubicado en el campus universitario de Tafira, en Las Palmas de Gran Canaria, este edificio es un centro neurálgico para estudiantes y profesores de la Facultad de Informática, así como para otros departamentos y grupos de investigación relacionados con la informática y la ingeniería.",
   "comment_list":[
+    "/Front_end/Datos/Json/comments/p3_1.json"
   ],
   "image_list": [
-    "/Front_end/Images/prueba_ulpgc.jpg"
+    "/Front_end/Datos/images/prueba_ulpgc.jpg"
   ],
-  "score": 4.5,
+  "score": 2,
   "label_list":[
     "/Front_end/Datos/Json/Labels/ForestLabel.json",
     "/Front_end/Datos/Json/Labels/BeachLabel.json"
